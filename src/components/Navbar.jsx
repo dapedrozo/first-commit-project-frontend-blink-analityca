@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
   
   const handleLangChange = (lang) => { 
-    let loc = "http://localhost:5173/";
+    let loc = "https://spontaneous-pudding-bcc5f1.netlify.app/";
     window.location.replace(loc + "?lng=" + lang);
   }
 
