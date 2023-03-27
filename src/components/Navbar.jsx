@@ -28,13 +28,15 @@ const Navbar = () => {
   ];
   
   const handleLangChange = (lang) => { 
+    //https://spontaneous-pudding-bcc5f1.netlify.app/
+    //http://localhost:5173/
     let loc = "https://spontaneous-pudding-bcc5f1.netlify.app/";
     window.location.replace(loc + "?lng=" + lang);
   }
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo2} alt="hoobank" className="w-[128px] h-[38px]" />
+      <img src={logo2} alt="blinkAnalityca" className="w-[128px] h-[38px]" loading="lazy" decoding="async"/>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
@@ -60,6 +62,7 @@ const Navbar = () => {
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToogle((prev) => !prev)}
+          loading="lazy" decoding="async"
         />
         <div
           className={`${

@@ -7,7 +7,7 @@ const Footer = () => (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
         <div className='flex-1 flex flex-col justify-start mr-10'>
-          <img src={logo2} alt="logo" className='w-[266px] h-[74px] object-contain' />
+          <img src={logo2} alt="logo" className='w-[266px] h-[74px] object-contain' loading="lazy" decoding="async"/>
           <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
             A new way to make the payments easy, reliable and secure.
           </p>
@@ -38,7 +38,7 @@ const Footer = () => (
         <div className='flex flex-row md:mt-0 mt-6'>
           {
             socialMedia.map((social,index)=>(
-              <img key={social.id} src={social.icon} alt={social.id} className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMedia.length-1 ? "mr-6":"mr-0"}`} />
+              <img key={social.id} src={social.icon} alt={social.id} className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMedia.length-1 ? "mr-6":"mr-0"}`} loading="lazy" decoding="async"/>
             ))
           }
         </div>
